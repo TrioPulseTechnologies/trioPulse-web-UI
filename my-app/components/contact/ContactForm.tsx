@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState } from "react";
 import { Send } from "lucide-react";
 import { SERVICES } from "@/lib/constants";
 
@@ -8,12 +8,28 @@ export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e:any) {
     e.preventDefault();
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 800));
-    setLoading(false);
-    setSubmitted(true);
+    const formData = {
+      name: e.target.name.value,
+      contact: e.target.email.value,
+      company: e.target.company.value,
+      service: e.target.service.value,
+      message: e.target.message.value,
+    };
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setLoading(false);
+      setSubmitted(true);
+    }
   }
 
   if (submitted) {

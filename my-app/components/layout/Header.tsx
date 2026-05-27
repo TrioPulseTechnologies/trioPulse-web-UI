@@ -6,10 +6,12 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { NAV_LINKS } from "@/lib/constants";
+import { BookCallModal } from "@/components/contact/BookCallModal";
 
 export function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [bookCallOpen, setBookCallOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -24,11 +26,11 @@ export function Header() {
   }, [pathname]);
 
   useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    document.body.style.overflow = mobileOpen || bookCallOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
-  }, [mobileOpen]);
+  }, [mobileOpen, bookCallOpen]);
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-5 sm:pt-4">
@@ -84,12 +86,13 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden shrink-0 md:block">
-            <Link
-              href="/contact"
+            <button
+              type="button"
+              onClick={() => setBookCallOpen(true)}
               className="inline-flex items-center gap-1.5 rounded-full bg-gray-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-gray-800"
             >
               Book a call
-            </Link>
+            </button>
           </div>
 
           {/* Mobile menu toggle */}
@@ -132,15 +135,20 @@ export function Header() {
                 </Link>
               );
             })}
-            <Link
-              href="/contact"
+            <button
+              type="button"
+              onClick={() => {
+                setBookCallOpen(true);
+                setMobileOpen(false);
+              }}
               className="mt-3 flex w-full items-center justify-center gap-2 rounded-full bg-gray-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-gray-800"
             >
               Book a call
-            </Link>
+            </button>
           </nav>
         </div>
       </div>
+      <BookCallModal open={bookCallOpen} onClose={() => setBookCallOpen(false)} />
     </header>
   );
 }
