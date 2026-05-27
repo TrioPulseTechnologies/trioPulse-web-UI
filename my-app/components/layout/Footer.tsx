@@ -10,12 +10,6 @@ export function Footer() {
     <footer className="border-t border-violet-100 bg-gradient-to-b from-white to-violet-50/50">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-          <div className="lg:col-span-1">
-            <Logo size="md" asLink={false} className="!h-11 sm:!h-12" />
-            <p className="mt-4 text-sm leading-relaxed text-gray-600">
-              {SITE.description}
-            </p>
-          </div>
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-900">
@@ -81,6 +75,9 @@ export function Footer() {
                 {SITE.address}
               </li>
             </ul>
+          </div>
+          <div className="lg:col-span-1 flex items-center">
+            <Logo size="md" asLink={false} className="!h-11 sm:!h-12" />
           </div>
         </div>
 

@@ -9,14 +9,14 @@ export function ServicesPreview() {
   return (
     <section
       id="services"
-      className="bg-gradient-to-b from-transparent to-violet-50/50 py-20 md:py-28"
+      className="bg-gradient-to-b from-violet-50/90 via-white to-violet-50/90 py-20 md:py-28"
       aria-labelledby="services-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="What We Do"
-          title="Services built for your success"
-          description="From stunning websites to intelligent automation — we deliver end-to-end digital solutions."
+          title="Solutions designed for your business growth"
+          description="We combine strategy, technology, and automation to help businesses grow smarter and build stronger digital experiences."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

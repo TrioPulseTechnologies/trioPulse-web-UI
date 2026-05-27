@@ -27,7 +27,7 @@ export function WhyChooseUs() {
         <SectionHeading
           eyebrow="Why TrioPulse"
           title="Why choose us"
-          description="We combine technical expertise with a client-first approach to deliver solutions that truly matter."
+          description="We focus on thoughtful collaboration, reliable execution, and digital solutions that create long-term value for growing businesses."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

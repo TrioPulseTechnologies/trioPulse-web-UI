@@ -5,16 +5,15 @@ export const SITE = {
   description:
     "TrioPulse delivers web development, SEO, AI automation, and custom software solutions to help businesses grow online.",
   url: "https://triopulse.com",
-  email: "hello@triopulse.com",
-  phone: "+1 (555) 123-4567",
-  address: "Your City, Country",
+  email: "triopulsetechnologies@gmail.com",
+  phone: "+91 84698 93890",
+  address: "Rajkot, Gujarat, India",
 } as const;
 
 export const NAV_LINKS = [
-  { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
-  { href: "/about-us", label: "About Us" },
   { href: "/portfolio", label: "Portfolio" },
+  { href: "/about-us", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ] as const;
 
@@ -23,7 +22,7 @@ export const SERVICES = [
     id: "web-development",
     title: "Web Development",
     description:
-      "Modern, fast, and responsive websites and web applications built with cutting-edge technologies.",
+      "Modern websites and web applications built for performance, scalability, and seamless user experiences across every device.",
     icon: "Code2",
     features: [
       "Custom websites & landing pages",
@@ -31,14 +30,13 @@ export const SERVICES = [
       "Performance optimization",
       "Mobile-first responsive design",
     ],
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80",
+    image: "/images/services/web-development.jpg",
   },
   {
     id: "seo",
     title: "SEO Services",
     description:
-      "Data-driven SEO strategies that improve rankings, traffic, and conversions for your business.",
+      "Search-focused strategies that improve visibility, attract the right audience, and drive long-term organic growth.",
     icon: "Search",
     features: [
       "Technical SEO audits",
@@ -46,14 +44,13 @@ export const SERVICES = [
       "On-page & off-page optimization",
       "Analytics & reporting",
     ],
-    image:
-      "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=1920&q=80",
+    image: "/images/services/seo-services.jpg",
   },
   {
     id: "ai-automation",
     title: "AI & Automation",
     description:
-      "Intelligent workflows and AI-powered tools that save time and scale your operations.",
+      "Smart automation systems that simplify workflows, reduce repetitive tasks, and improve operational efficiency.",
     icon: "Bot",
     features: [
       "Process automation",
@@ -61,14 +58,13 @@ export const SERVICES = [
       "Workflow integrations",
       "Custom ML solutions",
     ],
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1920&q=80",
+    image: "/images/services/ai-automation.jpg",
   },
   {
     id: "custom-software",
     title: "Custom Software",
     description:
-      "Tailored software solutions designed around your unique business needs and goals.",
+      "Custom-built software solutions tailored to your business processes, goals, and future scalability needs.",
     icon: "Layers",
     features: [
       "Enterprise applications",
@@ -76,8 +72,7 @@ export const SERVICES = [
       "Legacy system modernization",
       "Ongoing support & maintenance",
     ],
-    image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1920&q=80",
+    image: "/images/services/custom-software.jpg",
   },
 ] as const;
 
@@ -85,25 +80,25 @@ export const WHY_CHOOSE_US = [
   {
     title: "Expert Team",
     description:
-      "Skilled developers, designers, and strategists dedicated to delivering excellence on every project.",
+      "We work closely with you to understand your goals and create solutions that truly fit your business.",
     icon: "Users",
   },
   {
     title: "Results-Driven",
     description:
-      "We focus on measurable outcomes—higher traffic, better conversions, and streamlined operations.",
+      "Our focus is simple — helping your business grow with meaningful results, better performance, and lasting digital impact.",
     icon: "TrendingUp",
   },
   {
     title: "Transparent Process",
     description:
-      "Clear communication, regular updates, and no hidden surprises from kickoff to launch.",
+      "From the first conversation to final delivery, we keep everything clear, collaborative, and easy to understand.",
     icon: "MessageCircle",
   },
   {
     title: "Long-Term Partnership",
     description:
-      "We grow with you—offering support, maintenance, and continuous improvement after delivery.",
+      "We believe in building lasting relationships by supporting your business long after the project is completed.",
     icon: "Handshake",
   },
 ] as const;

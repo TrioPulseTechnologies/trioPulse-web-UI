@@ -14,21 +14,21 @@ export function CTA() {
             id="cta-heading"
             className="text-3xl font-bold text-white sm:text-4xl"
           >
-            Ready to transform your business?
+            Let’s build something meaningful together.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-gray-300">
-            Let&apos;s discuss your project and create a solution tailored to your goals.
+            We’re here to understand your ideas, support your goals, and create digital solutions that genuinely help your business grow.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button
               href="/contact"
               className="!bg-white !text-gray-900 hover:!bg-gray-100"
             >
-              Get in Touch
+              Let’s Talk
               <ArrowRight className="h-4 w-4" />
             </Button>
             <Button href="/services" variant="outline" className="!border-white !text-white hover:!bg-white hover:!text-gray-900">
-              View Services
+              Explore Services
             </Button>
           </div>
         </div>
