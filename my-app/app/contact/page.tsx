@@ -7,7 +7,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata: Metadata = createMetadata({
   title: "Contact Us",
   description:
-    "Get in touch with TrioPulse for web development, SEO, AI automation, and custom software inquiries.",
+    "Every conversation matters to us because every business has a unique journey worth building for.",
   path: "/contact",
 });
 
@@ -28,11 +28,6 @@ const contactInfo = [
     icon: MapPin,
     label: "Location",
     value: SITE.address,
-  },
-  {
-    icon: Clock,
-    label: "Business Hours",
-    value: "Mon – Fri, 9:00 AM – 6:00 PM",
   },
 ];
 
@@ -56,8 +51,7 @@ export default function ContactPage() {
           <div className="lg:col-span-2">
             <h2 className="text-2xl font-bold text-gray-900">Get in touch</h2>
             <p className="mt-3 text-gray-600">
-              Whether you need a new website, SEO strategy, AI automation, or custom
-              software — our team is ready to help.
+              We’re always open to meaningful conversations about your business, your ideas, and how technology can support your growth.
             </p>
 
             <ul className="mt-8 space-y-5">

@@ -46,9 +46,9 @@ export function Hero() {
             Start Your Project
             <ArrowRight className="h-4 w-4" aria-hidden />
           </Button>
-          <Button href="/portfolio" variant="secondary" className="w-full sm:w-auto">
+          {/* <Button href="/portfolio" variant="secondary" className="w-full sm:w-auto">
             View Our Work
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>

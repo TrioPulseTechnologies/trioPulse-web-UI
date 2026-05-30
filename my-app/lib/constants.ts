@@ -1,3 +1,5 @@
+import { Cloud } from "lucide-react";
+
 export const SITE = {
   name: "TrioPulse",
   tagline:
@@ -12,7 +14,7 @@ export const SITE = {
 
 export const NAV_LINKS = [
   { href: "/services", label: "Services" },
-  { href: "/portfolio", label: "Portfolio" },
+  // { href: "/portfolio", label: "Portfolio" },
   { href: "/about-us", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ] as const;
@@ -27,7 +29,13 @@ export const SERVICES = [
     features: [
       "Custom websites & landing pages",
       "E-commerce & SaaS platforms",
+      "Business websites & corporate portals",
+      "CMS development (WordPress, headless CMS, custom CMS)",
+      "API integration & third-party services",
       "Performance optimization",
+      "Secure & scalable architecture",
+      "Portfolio & personal brand websites",
+      "Lead generation focused websites",
       "Mobile-first responsive design",
     ],
     image: "/images/services/web-development.jpg",
@@ -39,10 +47,16 @@ export const SERVICES = [
       "Search-focused strategies that improve visibility, attract the right audience, and drive long-term organic growth.",
     icon: "Search",
     features: [
-      "Technical SEO audits",
+      "Technical SEO",
       "Keyword research & content strategy",
       "On-page & off-page optimization",
-      "Analytics & reporting",
+      "Local SEO optimization",
+      "SEO-friendly website structure",
+      "Competitor SEO analysis",
+      "Blog strategy & SEO content guidance",
+      "Meta tags & schema optimization",
+      "SaaS SEO strategies",
+      "Organic traffic growth strategy",
     ],
     image: "/images/services/seo-services.jpg",
   },
@@ -56,8 +70,12 @@ export const SERVICES = [
       "Process automation",
       "AI chatbots & assistants",
       "Workflow integrations",
-      "Custom ML solutions",
-    ],
+      "AI-powered customer support systems",
+      "WhatsApp & email automation",
+      "AI content generation workflows",
+      "Appointment & booking automation",
+      "Custom AI integrations using APIs"
+],
     image: "/images/services/ai-automation.jpg",
   },
   {
@@ -69,8 +87,14 @@ export const SERVICES = [
     features: [
       "Enterprise applications",
       "API development & integration",
-      "Legacy system modernization",
-      "Ongoing support & maintenance",
+      "CRM & ERP solutions",
+      "Admin panels & dashboards",
+      "Inventory & warehouse management systems",
+      "Billing & invoicing systems",
+      "Cloud-based software solutions",
+      "SaaS product development",
+      "Third-party software integrations",
+      "AI-enabled business software"
     ],
     image: "/images/services/custom-software.jpg",
   },

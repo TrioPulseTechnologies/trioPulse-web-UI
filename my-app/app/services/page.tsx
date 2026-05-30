@@ -25,8 +25,7 @@ export default function ServicesPage() {
             Our Services
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-            End-to-end digital solutions designed to elevate your brand, boost visibility,
-            and automate growth.
+            Supporting business growth through modern websites, smart strategies, and technology designed to make every day work simpler and more effective.
           </p>
         </div>
       </section>
@@ -68,16 +67,16 @@ export default function ServicesPage() {
                   <p className="mt-4 text-lg leading-relaxed text-gray-600">
                     {service.description}
                   </p>
-                  <ul className="mt-6 space-y-3">
+                  <div className="mt-6 grid gap-4 sm:grid-cols-2">
                     {service.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-3">
+                      <div key={feature} className="flex items-start gap-3">
                         <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                           <Check className="h-3 w-3" aria-hidden />
                         </span>
                         <span className="text-gray-700">{feature}</span>
-                      </li>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                   <div className="mt-8">
                     <Button href="/contact">Get Started</Button>
                   </div>
@@ -90,8 +89,8 @@ export default function ServicesPage() {
 
       <section className="mx-4 mb-20 max-w-7xl rounded-3xl bg-violet-50 px-8 py-12 text-center sm:mx-auto">
         <SectionHeading
-          title="Not sure which service you need?"
-          description="Tell us about your goals and we'll recommend the right approach."
+          title="Every business grows differently"
+          description="Share your goals with us, and we’ll help you choose the right path with clarity, honesty, and thoughtful guidance."
         />
         <Button href="/contact">Book a Free Consultation</Button>
       </section>
