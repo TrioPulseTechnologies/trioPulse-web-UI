@@ -5,9 +5,9 @@ import { SITE } from "@/lib/constants";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "Contact Us",
+  title: "Contact Triopulse Technologies",
   description:
-    "Every conversation matters to us because every business has a unique journey worth building for.",
+    "Got an idea, project, or challenge you'd like to discuss? Reach out and let's see how we can help bring it to life.",
   path: "/contact",
 });
 

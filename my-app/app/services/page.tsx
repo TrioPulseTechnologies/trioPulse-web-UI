@@ -8,9 +8,9 @@ import { SERVICES } from "@/lib/constants";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "Services",
+  title: "Digital Services for Growing Businesses | Triopulse Technologies",
   description:
-    "Explore TrioPulse services: web development, SEO, AI automation, and custom software development tailored to your business.",
+    "Whether you need a new website, help with SEO, automation, or custom software, we work closely with you to build solutions that fit your goals.",
   path: "/services",
 });
 

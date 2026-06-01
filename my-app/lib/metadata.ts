@@ -14,7 +14,7 @@ export function createMetadata({
   path?: string;
   noIndex?: boolean;
 }): Metadata {
-  const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
+  const fullTitle = title ? `${title}` : `${SITE.name} — ${SITE.tagline}`;
   const desc = description ?? SITE.description;
   const url = `${SITE.url}${path}`;
 

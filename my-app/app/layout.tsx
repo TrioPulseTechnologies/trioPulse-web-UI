@@ -12,7 +12,11 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata: Metadata = createMetadata({});
+export const metadata: Metadata = createMetadata({
+   title: "Triopulse Technologies | Websites, SEO and Custom Software",
+   description:
+    "We help businesses build better websites, get found on Google, and create software that solves everyday challenges. No unnecessary complexity-just practical digital solutions.",
+});
 
 export default function RootLayout({
   children,

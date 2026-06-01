@@ -1,12 +1,12 @@
 import { Cloud } from "lucide-react";
 
 export const SITE = {
-  name: "TrioPulse",
+  name: "TrioPulse Technologies",
   tagline:
     "Web Development • SEO Services • AI & Automation Services • Custom Software",
   description:
-    "TrioPulse delivers web development, SEO, AI automation, and custom software solutions to help businesses grow online.",
-  url: "https://triopulse.com",
+    "We help businesses build better websites, get found on Google, and create software that solves everyday challenges. No unnecessary complexity-just practical digital solutions.",
+  url: "https://www.triopulsetechnologies.com",
   email: "triopulsetechnologies@gmail.com",
   phone: "+91 84698 93890",
   address: "Rajkot, Gujarat, India",

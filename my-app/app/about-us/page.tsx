@@ -5,9 +5,9 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "About Us",
+  title: "About Triopulse Technologies | Our Story",
   description:
-    "Learn about TrioPulse — a results-focused web development and digital strategy team delivering modern websites, SEO, AI automation, and software solutions.",
+    "Triopulse started with three people, different skills, and a shared goal: helping businesses use technology in a way that feels simple, useful, and effective.",
   path: "/about-us",
 });
 

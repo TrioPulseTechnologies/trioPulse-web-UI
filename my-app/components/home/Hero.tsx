@@ -1,6 +1,14 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SITE } from "@/lib/constants";
+import { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createMetadata({
+  title: "Triopulse Technologies | Websites, SEO and Custom Software",
+  description:
+    "We help businesses build better websites, get found on Google, and create software that solves everyday challenges. No unnecessary complexity-just practical digital solutions.",
+});
 
 export function Hero() {
   return (
