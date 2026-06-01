@@ -97,7 +97,7 @@ export function BookCallModal({ open, onClose }: BookCallModalProps) {
                         Say goodbye to hold times! <span aria-hidden>🎉</span>
                     </h2>
                     <p className="max-w-xs text-sm leading-6 text-slate-700 sm:text-base">
-                        Fill out the form & receive an automated callback in just 28 seconds to speak with our experts!
+                        Leave your details and we'll be in touch to explore how we can help.
                     </p>
                 </div>
 

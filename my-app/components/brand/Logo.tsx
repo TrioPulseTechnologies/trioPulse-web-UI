@@ -42,7 +42,7 @@ export function Logo({
     <Link
       href="/"
       className="inline-flex shrink-0 items-center rounded-md outline-none transition-opacity hover:opacity-85 focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2"
-      aria-label={`${SITE.name} — Go to homepage`}
+      aria-label={`${SITE.name} - Go to homepage`}
     >
       {img}
     </Link>

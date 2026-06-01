@@ -35,7 +35,6 @@ const values = [
 const teamMembers = [
   {
     name: "Kirtan Gajjar",
-    designation: "Founder",
     description:
       "At TrioPulse, I lead AI and data-driven innovation, working on intelligent solutions that combine data science, AI analysis, and modern technology to help businesses make smarter decisions and build scalable digital products.",
     photo: "/images/team/kirtan.jpeg",
@@ -43,7 +42,6 @@ const teamMembers = [
   },
   {
     name: "Priyank Gajjar",
-    designation: "CEO",
     description:
       "At TrioPulse, I lead the vision of creating thoughtful digital products and scalable technology solutions for businesses across finance, real estate, lifestyle, and education sectors.",
     photo: "/images/team/priyank.jpeg",
@@ -51,7 +49,6 @@ const teamMembers = [
   },
   {
     name: "Dipali Gajjar",
-    designation: "Co-founder",
     description:
       "At TrioPulse, I work across SEO, content writing, design, and frontend development to create clear, engaging, and user-focused digital experiences that help brands grow their online presence.",
     photo: "/images/team/dipali.jpeg",
@@ -112,9 +109,9 @@ export default function AboutPage() {
                   {member.name}
                 </h2>
 
-                <p className="mt-1 text-sm font-medium text-violet-600">
+                {/* <p className="mt-1 text-sm font-medium text-violet-600">
                   {member.designation}
-                </p>
+                </p> */}
 
                 <p className="mt-4 text-gray-600">
                   {member.description}
@@ -163,7 +160,7 @@ export default function AboutPage() {
 
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 TrioPulse was created by three individuals from different
-                backgrounds who came together with one goal — helping
+                backgrounds who came together with one goal-helping
                 businesses grow through thoughtful digital solutions.
               </p>
 

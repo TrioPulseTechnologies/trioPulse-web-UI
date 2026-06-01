@@ -110,7 +110,7 @@ export const WHY_CHOOSE_US = [
   {
     title: "Results-Driven",
     description:
-      "Our focus is simple — helping your business grow with meaningful results, better performance, and lasting digital impact.",
+      "Our focus is simple - helping your business grow with meaningful results, better performance, and lasting digital impact.",
     icon: "TrendingUp",
   },
   {

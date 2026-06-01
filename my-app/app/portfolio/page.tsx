@@ -9,7 +9,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata: Metadata = createMetadata({
   title: "Portfolio",
   description:
-    "Browse TrioPulse portfolio — web development, SEO campaigns, AI automation, and custom software projects.",
+    "Browse TrioPulse portfolio - web development, SEO campaigns, AI automation, and custom software projects.",
   path: "/portfolio",
 });
 
@@ -22,7 +22,7 @@ export default function PortfolioPage() {
             Our Portfolio
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-            A showcase of projects we&apos;re proud of — delivering real results for real businesses.
+            A showcase of projects we&apos;re proud of - delivering real results for real businesses.
           </p>
         </div>
       </section>

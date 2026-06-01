@@ -42,11 +42,10 @@ export function Header() {
         }`}
       >
         <div className="flex min-h-[4.25rem] items-center justify-between gap-4 px-4 sm:min-h-[4.75rem] sm:gap-6 sm:px-6">
-          {/* Logo — prominent */}
           <Link
             href="/"
             className="inline-flex shrink-0 items-center rounded-md outline-none transition-opacity hover:opacity-85 focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2"
-            aria-label="TrioPulse — Go to homepage"
+            aria-label="TrioPulse - Go to homepage"
           >
             <Image
               src="/triopulse-header-logo.svg"

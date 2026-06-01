@@ -50,7 +50,7 @@ export default function ServicesPage() {
                 <div className={`relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg ${isReversed ? "md:[direction:ltr]" : ""}`}>
                   <Image
                     src={service.image}
-                    alt={`${service.title} — TrioPulse service`}
+                    alt={`${service.title} - TrioPulse service`}
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"

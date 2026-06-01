@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Logo } from "@/components/brand/Logo";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { NAV_LINKS, SERVICES, SITE } from "@/lib/constants";
+import { FaLinkedin, FaXTwitter  } from "react-icons/fa6";
+import { FaInstagram, FaWhatsapp  } from "react-icons/fa";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -73,6 +75,49 @@ export function Footer() {
               <li className="flex items-start gap-2 text-sm text-gray-600">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
                 {SITE.address}
+              </li>
+              <li>
+                <div className="mt-3 flex items-center gap-4">
+                  <a
+                    href="https://www.linkedin.com/company/123323926"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                    className="text-gray-600 transition-colors hover:text-violet-700"
+                  >
+                    <FaLinkedin className="h-5 w-5" />
+                  </a>
+
+                  <a
+                    href="https://x.com/triopulsetech"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="X (Twitter)"
+                    className="text-gray-600 transition-colors hover:text-violet-700"
+                  >
+                    <FaXTwitter className="h-5 w-5" />
+                  </a>
+
+                  <a
+                    href="https://wa.me/+918469893890?text=Hello%20TrioPulse%2C%20I%20want%20to%20discuss%20a%20project."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp"
+                    className="text-gray-600 transition-colors hover:text-green-600"
+                  >
+                    <FaWhatsapp className="h-5 w-5" />
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/triopulsetechnology"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    className="text-gray-600 transition-colors hover:text-pink-600"
+                  >
+                    <FaInstagram className="h-5 w-5" />
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

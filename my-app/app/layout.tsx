@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { OrganizationJsonLd, WebSiteJsonLd } from "@/components/JsonLd";
 import { createMetadata } from "@/lib/metadata";
+import { BackToTop } from "@/components/ui/BackToTop";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -13,8 +14,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = createMetadata({
-   title: "Triopulse Technologies | Websites, SEO and Custom Software",
-   description:
+  title: "Triopulse Technologies | Websites, SEO and Custom Software",
+  description:
     "We help businesses build better websites, get found on Google, and create software that solves everyday challenges. No unnecessary complexity-just practical digital solutions.",
 });
 
@@ -31,7 +32,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen antialiased">
         <Header />
-        <main>{children}</main>
+        <main>{children}<BackToTop /></main>
         <Footer />
       </body>
     </html>
