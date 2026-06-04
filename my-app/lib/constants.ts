@@ -7,7 +7,7 @@ export const SITE = {
   description:
     "We help businesses build better websites, get found on Google, and create software that solves everyday challenges. No unnecessary complexity-just practical digital solutions.",
   url: "https://www.triopulsetechnologies.com",
-  email: "triopulsetechnologies@gmail.com",
+  email: "hello@triopulsetechnologies.com",
   phone: "+91 84698 93890",
   address: "Rajkot, Gujarat, India",
 } as const;
