@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { OrganizationJsonLd, WebSiteJsonLd } from "@/components/JsonLd";
 import { createMetadata } from "@/lib/metadata";
 import { BackToTop } from "@/components/ui/BackToTop";
+import { Loader } from "@/components/ui/Loader";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -32,7 +34,12 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen antialiased">
         <Header />
-        <main>{children}<BackToTop /></main>
+        <main>
+          <Suspense fallback={<Loader />}>
+            {children}
+          </Suspense>
+          <BackToTop />
+        </main>
         <Footer />
       </body>
     </html>
