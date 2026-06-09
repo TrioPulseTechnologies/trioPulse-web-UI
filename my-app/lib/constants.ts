@@ -14,7 +14,7 @@ export const SITE = {
 
 export const NAV_LINKS = [
   { href: "/services", label: "Services" },
-  // { href: "/portfolio", label: "Portfolio" },
+  { href: "/portfolio", label: "Portfolio" },
   { href: "/about-us", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ] as const;
@@ -75,7 +75,7 @@ export const SERVICES = [
       "AI content generation workflows",
       "Appointment & booking automation",
       "Custom AI integrations using APIs"
-],
+    ],
     image: "/images/services/ai-automation.jpg",
   },
   {
@@ -167,52 +167,133 @@ export const TESTIMONIALS = [
 ] as const;
 
 export const PORTFOLIO_ITEMS = [
-  {
-    title: "E-Commerce Platform",
-    category: "Web Development",
-    description: "Full-featured online store with payment integration and admin dashboard.",
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-    tags: ["Next.js", "Stripe", "PostgreSQL"],
+    {
+    slug: "therabody",
+    title: "Therabody",
+    category: "E-Commerce",
+    industry: "Health & Wellness",
+    timeline: "6 months",
+    location: "United States",
+    image: "/images/portfolio/therabodyNew.png",
+    description:
+      "A premium e-commerce experience built for the health and wellness industry, focused on performance, user engagement, and seamless online shopping journeys.",
+    technologies: [
+      "React JS",
+      "Node JS",
+      "E-Commerce",
+      "CMS Integration"
+    ],
+    results: [
+      "Optimized shopping experience",
+      "Responsive user journeys",
+      "Conversion-focused design",
+      "Enhanced website performance",
+      "CMS integration for easy content management"
+    ],
+    tags: [
+      "E-Commerce",
+      "Performance",
+      "CMS Integration",
+      "Health & Wellness"
+    ],
+
+    website: "https://www.therabody.com/"
   },
   {
-    title: "SEO Growth Campaign",
-    category: "SEO Services",
-    description: "Organic traffic increased 180% in 6 months for a B2B SaaS client.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
-    tags: ["Technical SEO", "Content", "Analytics"],
+    slug: "nestframe",
+    title: "NestFrame",
+    category: "Real Estate Platform",
+    industry: "Real Estate",
+    timeline: "3 Weeks",
+    location: "United Kingdom",
+    image: "/images/portfolio/nestFrameNew.png",
+    description: "A luxury interior design website built with Next.js, featuring a refined visual experience, seamless navigation, and modern performance. Designed to showcase premium spaces, sophisticated aesthetics, and elevate brand presence through an elegant digital experience.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "SEO"
+    ],
+
+    results: [
+      "Mobile-first experience",
+      "SEO optimized architecture",
+      "Fast page load performance"
+    ],
+
+    tags: [
+      "Next.js",
+      "React",
+      "Tailwind",
+      "CSS",
+    ],
+
+    website: "https://nestframe.triopulsetechnologies.com/"
   },
   {
-    title: "AI Customer Support Bot",
-    category: "AI & Automation",
-    description: "24/7 intelligent chatbot handling 70% of support inquiries automatically.",
-    image:
-      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&q=80",
-    tags: ["OpenAI", "Node.js", "Integrations"],
+    slug: "wybrid",
+    title: "Wybrid",
+    category: "Business Platform",
+    industry: "Business Consulting & Professional Services",
+    timeline: "1 year",
+    location: "India",
+    image: "/images/portfolio/wybridNew.png",
+    description:
+      "A modern business platform built with emerging technologies, designed to establish a strong digital presence through professional branding, intuitive user experiences, and high-performance web architecture.",
+    technologies: [
+      "React JS",
+      "Node JS",
+      "AWS Cloud",
+      "TypeScript",
+      "Custom CSS"
+    ],
+    results: [
+      "Professional digital presence",
+      "Mobile-first experience",
+      "Improved user engagement",
+      "Fast page load performance"
+    ],
+    tags: [
+      "MERN Stack",
+      "Business Website",
+      "Responsive Design",
+      "Cloud Hosting"
+    ],
+    website: "https://wybrid.com/"
   },
   {
-    title: "Healthcare Management System",
-    category: "Custom Software",
-    description: "HIPAA-aware patient scheduling and records management platform.",
-    image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
-    tags: ["React", "API", "Security"],
-  },
-  {
-    title: "Corporate Website Redesign",
-    category: "Web Development",
-    description: "Modern brand refresh with 95+ Lighthouse performance score.",
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80",
-    tags: ["Next.js", "Tailwind", "CMS"],
-  },
-  {
-    title: "Workflow Automation Suite",
-    category: "AI & Automation",
-    description: "Automated data pipelines connecting CRM, email, and reporting tools.",
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
-    tags: ["Python", "Zapier", "APIs"],
-  },
+    slug: "cpp-web-services",
+    title: "CPP Web Services Portal",
+    category: "Business Portal",
+    industry: "Technology & IT Services",
+    timeline: "3 years",
+    location: "India",
+    image: "/images/portfolio/cppNew.png",
+    description:
+      "A custom business portal developed to streamline operations, manage customer workflows, and improve organizational efficiency through automation and centralized management.",
+    technologies: [
+      "MERN Stack",
+      "JAVA",
+      "AWS Cloud",
+      "AI Integrations",
+      "OPENAI API"
+    ],
+    results: [
+      "Streamlined business operations",
+      "Improved workflow management",
+      "Fast and scalable sales APIs",
+      "Imporoved business efficiency through automation"
+    ],
+    tags: [
+      "Portal",
+      "Automation",
+      "Custom Software",
+      "Finance",
+      "SBI",
+      "ICICI",
+      "Bajaj Finance"
+    ],
+    website: "https://portal.cppwebservices.in/"
+  }
+
 ] as const;
