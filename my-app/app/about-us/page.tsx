@@ -86,8 +86,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* TEAM SECTION */}
-      <section className="py-16 md:py-24">
+      {/* <section className="py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Our Team" title=" " />
 
@@ -109,9 +108,9 @@ export default function AboutPage() {
                   {member.name}
                 </h2>
 
-                {/* <p className="mt-1 text-sm font-medium text-violet-600">
+                <p className="mt-1 text-sm font-medium text-violet-600">
                   {member.designation}
-                </p> */}
+                </p>
 
                 <p className="mt-4 text-gray-600">
                   {member.description}
@@ -141,7 +140,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* OUR STORY & MISSION */}
       <section className="py-16 md:py-24">
