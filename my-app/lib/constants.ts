@@ -9,7 +9,7 @@ export const SITE = {
   url: "https://www.triopulsetechnologies.com",
   email: "hello@triopulsetechnologies.com",
   phone: "+91 84698 93890",
-  address: "Rajkot, Gujarat, India",
+  address: "Ahmedabad, Gujarat, India",
 } as const;
 
 export const NAV_LINKS = [
